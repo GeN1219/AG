@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<title>history</title>
 
-		<link rel="stylesheet" type="text\css" href="triangle.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<!-- jQueryの読み込み -->
 		<!--
 		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
@@ -36,9 +36,9 @@
 		</h1>
 		<nav class="pc-nav">
 			<ul>
-				<li><a href="a.html">ABOUT</a></li>
-				<li><a href="log.html">HISTORY</a></li>
-				<li><a href="#">TRIP</a></li>
+				<li><a href="a/a.html">ABOUT</a></li>
+				<li><a href="log/log.html">HISTORY</a></li>
+				<li><a href="aqua/aqua.html">AQUA</a></li>
 				<!--
 				<li class="close"><span>閉じる</span></li>
 				-->
@@ -46,19 +46,21 @@
 
 			<!-- 画像の表示（リンク付き） -->
 			<div style="position:absolute; top:100px; left:200px"> 
-			<a href="a.html">
+			<a href="a/a.html">
 			<img src="img/ball.jpg" width="240px" height="160px" border="4px" alt="ball">
 				</a>
 				</div>
 
-			<a href="log.html">	
+			<a href="log/log.html">	
 			<div style="position:absolute; top: 350px; left:450px"> 
 			<img src="img/jfish.jpg" width="240px" height="160px" border="4px" alt="ball">
 				</a>
 				</div>
 		
+			<a href="aqua/aqua.html">
 			<div style="position:absolute; top:100px; left:800px"> 
 			<img src="img/header_tin.jpg" width="240px" height="160px" border="4px" alt="ball">
+				</a>
 				</div>
 		
 
@@ -78,25 +80,29 @@
 		-->
 	</header>
 
-	<!-- 背景（mainvisual） -->
+	<body>
+	
+	<!-- 背景（mainvisual） --> 
 	<div class="main-visual">
 		<h2>A & G</h2>
 	</div>
-
 	<!-- 背景に画像を表示 -->
 	<!--
 	<body background="img/ball.jpg" alt="ballimage"></body>
 	-->
+ 
+	<!-- 時刻表示 -->
+	start : 2017.11.15<br>
+	today : 
+	<!-- 現在日時の取得 -->
+	<script>
+		var today=new Date(); 
+		var year = today.getFullYear();
+		var month = today.getMonth()+1;
+		var day = today.getDate();
+		document.write(year+"."+month+"."+day);
+	</script>
 
-	<!-- 時刻表示 -->	
-		start : 2017.11.15<br>
-		today : 
-		<!-- 現在日時の取得 -->
-		<script>
-			var today=new Date(); 
-			var year = today.getFullYear();
-			var month = today.getMonth()+1;
-			var day = today.getDate();
-			document.write(year+"."+month+"."+day);
-		</script>
+
+	</body>	
 </html>
